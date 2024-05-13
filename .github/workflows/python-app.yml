@@ -29,3 +29,8 @@ jobs:
     - name: Run the application
       run: |
         python test.py
+    - name: Upload result artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: csv
+        path: people.csv
